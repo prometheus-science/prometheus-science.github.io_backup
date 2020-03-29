@@ -449,6 +449,95 @@ html {
   </div>
   </div>
 </header>
+
+<!-- Contact -->
+<!-- Contact -->
+<section id="contact" class="fragment ">
+    <div class="container-fluid bg-light ">
+    <div class="container py-5 ">
+
+  <div class="title-container row mx-0">
+    <div class="title col px-0 text-center text-body">
+      <h2>Get in touch</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <form
+        class="contact position-relative"
+        method="POST"
+        name="defaultContact"
+        id="defaultContact" action="https://formspree.io/xbjkvple" data-has-formspree="true">
+          <div class="row py-3 should-fade">
+            <div class="col-md-6">
+                <div class="form-group">
+                  <input
+                    id="name"
+                    name="name"
+                    class="form-control"
+                    type="text"
+                    data-validation
+                    data-validation-error-msg="Please enter your name"
+                    placeholder="Your Name *"
+                    required>
+                  <div class="px-2" data-error id="name-error"></div>
+                </div>
+                <div class="form-group">
+                  <input
+                    id="email"
+                    name="email"
+                    class="form-control"
+                    type="text"
+                    data-validation="email"
+                    data-validation-error-msg="Please enter your email address"
+                    placeholder="Your Email *"
+                    required>
+                  <div class="px-2" data-error id="email-error"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="form-control text-dark"
+                    type="text"
+                    data-validation
+                    data-validation-error-msg="Please enter a message"
+                    placeholder="Your Message *"
+                    rows="4"
+                    required></textarea>
+                  <div class="px-2" data-error id="message-error"></div>
+                </div>
+            </div>
+            <div class="col-lg-12 text-center">
+              <div class="captcha-error alert alert-danger d-none" id="captcha-error">Message could not be send due to captcha not loadable. Please contact us at andre@prometheus-science.com.
+              </div>
+              <div class="generic-error alert alert-danger d-none" id="generic-error">Message could not be send. Please contact us at <a href="mailto:mail@example.com">mail@example.com</a> instead.
+              </div>
+              <noscript>
+                <div class="alert alert-danger py-2" id="js-error">Message can not be send with javascript disabled. Please contact us at andre@prometheus-science.com.
+                </div>
+              </noscript>
+                <button
+                  class="btn submit-btn btn-primary"
+                  type="submit">Send Button
+                </button>
+            </div>
+          </div>
+              <input type="hidden" name="page" value="/categories/"/><div class="generic-success mb-0 mb-3 hidden" id="generic-success">
+            <div class="alert alert-success">Thank you for awesomely contacting us.
+            </div>
+            <span class="btn btn-primary" data-action="return-form">Return</span>
+          </div>
+      </form>
+    </div>
+  </div>
+    </div>
+    </div>
+</section>
+
 <!-- Items -->
 <section id="services" class="fragment ">
     <div class="container-fluid bg-light ">
@@ -727,96 +816,6 @@ to meet experimental needs</p>
 <p>André Maia Chagas</p>
 </div>
     </article>
-  </div>
-    </div>
-    </div>
-</section>
-
-
-<!-- Contact -->
-<!-- Contact -->
-<section id="contact" class="fragment ">
-    <div class="container-fluid bg-light ">
-    <div class="container py-5 ">
-
-  <div class="title-container row mx-0">
-    <div class="title col px-0 text-center text-body">
-      <h2>Get in touch</h2>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-12">
-      <form
-        class="contact position-relative"
-        method="POST"
-        name="defaultContact"
-        id="defaultContact" action="https://formspree.io/" data-has-formspree="true">
-          <div class="row py-3 should-fade">
-            <div class="col-md-6">
-                <div class="form-group">
-                  <input
-                    id="name"
-                    name="name"
-                    class="form-control"
-                    type="text"
-                    data-validation
-                    data-validation-error-msg="Please enter your name"
-                    placeholder="Your Name *"
-                    required>
-                  <div class="px-2" data-error id="name-error"></div>
-                </div>
-                <div class="form-group">
-                  <input
-                    id="email"
-                    name="email"
-                    class="form-control"
-                    type="text"
-                    data-validation="email"
-                    data-validation-error-msg="Please enter your email address"
-                    placeholder="Your Email *"
-                    required>
-                  <div class="px-2" data-error id="email-error"></div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                  <textarea
-                    id="message"
-                    name="message"
-                    class="form-control text-dark"
-                    type="text"
-                    data-validation
-                    data-validation-error-msg="Send Message"
-                    placeholder="Your Message *"
-                    rows="4"
-                    required></textarea>
-                  <div class="px-2" data-error id="message-error"></div>
-                </div>
-            </div>
-            <div class="col-lg-12 text-center">
-              <div class="captcha-error alert alert-danger d-none" id="captcha-error">Message could not be send due to captcha not loadable. Please contact us at andre@prometheus-science.com.
-              </div>
-              <div class="generic-error alert alert-danger d-none" id="generic-error">Message could not be send. Please contact us at andre@prometheus-science.com.
-              </div>
-              <noscript>
-                <div class="alert alert-danger py-2" id="js-error">Message can not be send with javascript disabled. Please contact us at andre@prometheus-science.com.
-                </div>
-              </noscript>
-                <button
-                  class="btn submit-btn btn-primary"
-                  type="submit">Send Message
-                </button>
-            </div>
-          </div>
-              <input type="hidden" name="page" value="/categories/"/>
-              <input type="hidden" name="someID" value="example.com"/><div class="generic-success mb-0 mb-3 hidden" id="generic-success">
-            <div class="alert alert-success">Thank you for contacting us
-            </div>
-            <span class="btn btn-primary" data-action="return-form">Return</span>
-          </div>
-      </form>
-    </div>
   </div>
     </div>
     </div>
