@@ -443,7 +443,7 @@ html {
       <div class="hero-subtitle-container row justify-content-center align-items-start">
         <h1 class="hero-subtitle overlay jumbotron-heading my-4 text-body">Open Science &amp; Open Source Hardware</h1>
       </div><div class="hero-buttons">
-      <a class="overlay btn btn-lg m-2 btn-info " href="/#">
+      <a class="overlay btn btn-lg m-2 btn-info " href="/#contact">
         <div class="column justify-content-center align-content-center">Contact us</div>
       </a>
   </div>
@@ -751,7 +751,7 @@ to meet experimental needs</p>
         class="contact position-relative"
         method="POST"
         name="defaultContact"
-        id="defaultContact" action="https://example.com/mailout" data-has-formspree="true">
+        id="defaultContact" action="https://formspree.io/" data-has-formspree="true">
           <div class="row py-3 should-fade">
             <div class="col-md-6">
                 <div class="form-group">
@@ -778,18 +778,6 @@ to meet experimental needs</p>
                     required>
                   <div class="px-2" data-error id="email-error"></div>
                 </div>
-                <div class="form-group">
-                  <input
-                    id="phone"
-                    name="phone"
-                    class="form-control"
-                    type="text"
-                    data-validation="regex"
-                    data-validation-regex="^([0-9,\+]+)$"
-                    data-validation-error-msg="Please enter your phone number"
-                    placeholder="Your Phone">
-                  <div class="px-2" data-error id="phone-error"></div>
-                </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
@@ -807,12 +795,12 @@ to meet experimental needs</p>
                 </div>
             </div>
             <div class="col-lg-12 text-center">
-              <div class="captcha-error alert alert-danger d-none" id="captcha-error">Message could not be send due to captcha not loadable. Please contact us at mail@example.com.
+              <div class="captcha-error alert alert-danger d-none" id="captcha-error">Message could not be send due to captcha not loadable. Please contact us at andre@prometheus-science.com.
               </div>
-              <div class="generic-error alert alert-danger d-none" id="generic-error">Message could not be send. Please contact us at mail@example.com.
+              <div class="generic-error alert alert-danger d-none" id="generic-error">Message could not be send. Please contact us at andre@prometheus-science.com.
               </div>
               <noscript>
-                <div class="alert alert-danger py-2" id="js-error">Message can not be send with javascript disabled. Please contact us at mail@example.com.
+                <div class="alert alert-danger py-2" id="js-error">Message can not be send with javascript disabled. Please contact us at andre@prometheus-science.com.
                 </div>
               </noscript>
                 <button
