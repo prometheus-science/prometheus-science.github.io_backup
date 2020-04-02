@@ -911,10 +911,19 @@ Whenever Prometheus Science services are provided using only things developed in
                 <div class="alert alert-danger py-2" id="js-error">Message can not be send with javascript disabled. Please contact us at andre@prometheus-science.com.
                 </div>
               </noscript>
-                <button
-                  class="btn submit-btn btn-primary"
-                  type="submit">Send Button
-                </button>
+                <div class="g-recaptcha-container">
+                  <span class="g-recaptcha-filler"></span>
+                  <button
+                    class="g-recaptcha btn btn-primary submit-btn"
+                    type="submit"
+                    data-sitekey="D8@!Gs46^Z"
+                    data-size="invisible"
+                    data-badge="inline"
+                    data-callback="onContactCaptcha"
+                    disabled>Send Button
+                  </button>
+                  <span class="filler"></span>
+                </div>
             </div>
           </div>
               <input type="hidden" name="page" value="/tags/"/><div class="generic-success mb-0 mb-3 hidden" id="generic-success">
@@ -968,10 +977,12 @@ Whenever Prometheus Science services are provided using only things developed in
     </div>
     <div class="col-md m-2 text-body">
         <div><h4 id="prometheus-science-consultancy">Prometheus Science Consultancy</h4>
-<p>Prometheus Science UG (haftungsbeschränkt)<br>
-Altensteinstraße 40<br>
+<p>Prometheus Science UG (haftungsbeschränkt)</p>
+<p>Altensteinstraße 40<br>
 D-14195 Berlin<br>
-<a href="/imprint">Imprint</a></p>
+registration number: HBR 207562 B
+VAT identification number according to §27a USt-IdNr: DE324896742</p>
+<p><a href="/imprint">Imprint</a></p>
 </div>
     </div>
   </div>
@@ -1012,7 +1023,7 @@ D-14195 Berlin<br>
 <div id="react"></div>
 
     <!-- Theme Code -->
-      <script async defer src="/scripts/syna-main.min.68ae1ae47948304c9c224cfc1a97ffe16c57514bc587dd6140dcb82389a8d299.js"></script>
+      <script async defer src="/scripts/syna-main.min.68ae1ae47948304c9c224cfc1a97ffe16c57514bc587dd6140dcb82389a8d299.js"></script><script async defer src="https://www.google.com/recaptcha/api.js"></script>
       <script async defer src="/scripts/syna-contact.min.65ae1e3359ee7a170569564df3be09946d477dcbc9f5126cc1faf69ed2a5b217.js"></script>
   </body>
 </html>
