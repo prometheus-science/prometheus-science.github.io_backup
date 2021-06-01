@@ -774,7 +774,7 @@ html {
         class="contact position-relative"
         method="POST"
         name="defaultContact"
-        id="defaultContact" action="https://formspree.io/f/xbjkvple" data-has-formspree="true">
+        id="defaultContact" action="https://formspree.io/f/mknpbwnr" data-has-formspree="true">
           <div class="row py-3 should-fade">
             <div class="col-md-6">
                 <div class="form-group">
@@ -826,10 +826,19 @@ html {
                 <div class="alert alert-danger py-2" id="js-error">Message can not be send with javascript disabled. Please contact us at andre@prometheus-science.com.
                 </div>
               </noscript>
-                <button
-                  class="btn submit-btn btn-primary"
-                  type="submit">Send Message
-                </button>
+                <div class="g-recaptcha-container">
+                  <span class="g-recaptcha-filler"></span>
+                  <button
+                    class="g-recaptcha btn btn-primary submit-btn"
+                    type="submit"
+                    data-sitekey="6LcM8wYbAAAAAPQU9tPqWgdwugRdK6mCwK0QWYZv"
+                    data-size="invisible"
+                    data-badge="inline"
+                    data-callback="onContactCaptcha"
+                    disabled>Send Message
+                  </button>
+                  <span class="filler"></span>
+                </div>
             </div>
           </div>
               <input type="hidden" name="page" value="/"/>
@@ -919,7 +928,7 @@ VAT identification number: GB338649658000</p>
     <!-- Theme Code -->
       <script async defer src="/scripts/syna-main.min.0fee75bda576b036c6916366c93862bee0f9e51fac1be5360918faac938026cb.js"></script>
       <script async defer src="/scripts/syna-hero.min.85d9e7e9b58c4a3f62475a9264233e5ec9b087d771e22ec4b6ed5abda77e3bae.js"></script>
-      <script async defer src="/scripts/syna-portfolio.min.d2616637db779b36f3fff977354020139adac4d9eb14c58bcb6e22abdc1e3560.js"></script>
+      <script async defer src="/scripts/syna-portfolio.min.d2616637db779b36f3fff977354020139adac4d9eb14c58bcb6e22abdc1e3560.js"></script><script async defer src="https://www.google.com/recaptcha/api.js"></script>
       <script async defer src="/scripts/syna-contact.min.25978065e5e56c1e570de0c4989574b57b3391494d02e678b275ba5b27931224.js"></script>
   </body>
 </html>
